@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style-type: none;
+    color: #ffffff;
+    cursor: url('./res/custom-cursor-white.png'), auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+input,
+button,
+.icon {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parallax CSS */
+
+.wrapper{
+    height: 100vh;
+    overflow: hidden; 
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* Cursor CSS */
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    border: 1px solid var(--white);
+    transform: translate(-25%, -25%);
+    pointer-events: none;
+    transition: 1000ms ease-in-out;
+    transition: width 200ms, height 200ms;
+    z-index: 2;
+}
+
+li:hover > .cursor{
+    /* cursor: url('./res/custom-cursor-white-large.png'), auto; */
+    height: 50px;
+    width: 50px;
+}
+
+.box {
+    background-color: #000000aa;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    z-index: 1;
+    display: block;
+    /* margin: 10vh auto auto auto; */
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+/* Navbar CSS */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #151515;
+}
+
+.navbar li i {
+    margin: -10px 10px;
+    padding: 10px 10px;
+    font-size: 25px;
+}
+
+.navlink {
+    transition: 400ms;
+}
+
+.navlink:hover {
+    transform: scale(1.4);
+}
+
+.navlink-different {
+    /* do something different here */
+}
+
+.hardik {
+    padding: 2px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+}
+
