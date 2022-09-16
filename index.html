@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hello Hardik</title>
     <!-- Style sheet -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./parallax/parallax.css" />
@@ -14,31 +14,160 @@
 </head>
 
 <body>
-    <section class="wrapper">
+    <!-- Cursor Div -->
+    <div class="cursor"></div>
+    <!-- wrapper section contains the star animation, therefore whole code lies inside the wrapper class -->
+    <section class="wrapper main" id="main">
+        <!-- CSS to these files can be found in parallax folder -->
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-        <!-- Cursor Div -->
-        <div class="cursor"></div>
-        <div class="box">
-            <div class="navbar">
-                <li class="navlink">Skills</li>
-                <li class="navlink">Experience</li>
-                <li class="navlink-different">Hello <span class="hardik">Hardik</span></li>
-                <li class="navlink">Contact</li>
-                <li><i class="fa-brands fa-linkedin navlink"></i><i class="fa-brands fa-instagram navlink"></i></li>
-            </div>
-        </div>
 
-        <section class="main" id="main">
+        <div class="box">
+            <!-- header section in which navbar lies -->
             <nav>
-                <div class="lines">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line1"></div>
+                <div class="logo">
+                    <label>Hello <span class="hardik">Hardik</span></label>
+                </div>
+                <div class="nav-links">
+                    <li><a href="#">ABOUT
+                            <hr>
+                        </a> </li>
+                    <li><a href="#">SKILLS
+                            <hr>
+                        </a> </li>
+                    <li><a href="#">EXPERIENCE
+                            <hr>
+                        </a> </li>
+                    <li><a href="#">ACHIEVEMENTS
+                            <hr>
+                        </a> </li>
+                    <li class="contact"><a href="#">CONTACT <i class="fa-solid fa-location-arrow"></i>
+                            <hr>
+                        </a> </li>
+                </div>
+                <div class="nav-lines">
+                    <div class="line line-full"></div>
+                    <div class="line line-half"></div>
+                    <div class="line line-full"></div>
                 </div>
             </nav>
-        </section>
+            <!-- https://www.google.com/search?q=move+text+horizontally+on+scroll&rlz=1C1UEAD_enIN977IN977&ei=QYMkY9vzM5jez7sPoae8yAE&oq=scroll+on+horizon+text&gs_lcp=Cgdnd3Mtd2l6EAMYADIICAAQHhAIEAcyBQgAEIYDMgUIABCGAzIFCAAQhgM6BAgAEEdKBAhBGABKBQhAEgExSgQIRhgAUPIEWKMNYNUTaABwA3gAgAGKAYgBxgaSAQMwLjeYAQCgAQHIAQjAAQE&sclient=gws-wiz#kpvalbx=_UIMkY-zaLt2V3LUPuMem0AU_34 -->
+            <main>
+                <div class="name">
+                    <p>THE NAME IS</p>
+                    <h1>HARDIK SHAH</h1>
+                </div>
+
+                <div class="container">
+                    <div class="button-box">
+                        <div class="button-borders">
+                            <button class="primary-button">KNOW MORE ABOUT ME</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <section class="about-me section" id="about-me">
+                <h1 class="title">ABOUT ME</h1>
+                <h4 class="subtitle">I'M NOT A GAMER</h4>
+                <p class="paragraph">I'm a passionate front end developer with an experience of building commercial
+                    projects. The thoughts of running an empire aspires me to do what I do. </p>
+            </section>
+            <hr class="section-divider">
+            <section class="my-stack section" id="my-stack">
+                <h1 class="title">MY STACK</h1>
+                <h4 class="subtitle">A.K.A. SKILLS</h4>
+                <div class="stack">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-npm"></i>
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <p class="paragraph">I can code, edit, write & read. But not study :)</p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="experience-section section" id="experience">
+                <h1 class="title">EXPERIENCES</h1>
+                <h4 class="subtitle">THE PART WHERE I GRINDED</h4>
+                <div class="experience">
+                    <div class="experiences">
+                        <div class="img">
+                            <img src="./res/TKR.png" alt="Robocon Logo">
+                        </div>
+                        <div class="info">
+                            <h3>Team KJSCE Robocon</h3>
+                            <h4>Creative & Management Team</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, voluptate.</p>
+                        </div>
+                    </div>
+
+                    <div class="experiences">
+                        <div class="img">
+                            <img src="./res/e-cell.png" alt="Robocon Logo">
+                        </div>
+                        <div class="info">
+                            <h3>E-Cell, IIT Hyderabad</h3>
+                            <h4>Campus Ambasaddor</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, error!</p>
+                        </div>
+                    </div>
+
+                    <div class="experiences">
+                        <div class="img">
+                            <img src="./res/e-cell.png" alt="Robocon Logo">
+                        </div>
+                        <div class="info">
+                            <h3>KJSCE Codecell</h3>
+                            <h4>Campus Ambasaddor</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, error!</p>
+                        </div>
+                    </div>
+
+                    <div class="experiences">
+                        <div class="img">
+                            <img src="" alt="Hellbent Labs">
+                        </div>
+                        <div class="info">
+                            <h3>Helbent Labs</h3>
+                            <h4>Web Developer</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, adipisci.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <i class="fa-solid fa-maximize"></i>	Maximize
+                <i class="fa-solid fa-minimize"></i>	Minimize -->
+            </section>
+            
+            <hr class="section-divider">
+
+            <section class="achievements-section section" id="achievements">
+                <h1 class="title">ACHIEVEMENTS</h1>
+                <h4 class="subtitle">ITS ALWAYS A PROUD FEELING</h4>
+                <p class="paragraph">-- Nothing yet --</p>
+            </section>
+
+            <footer>
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <p>Made with <i class="fa-solid fa-heart"></i> by Hardik Shah</p>
+                <p>&copy; 2022 copyright | hellohardik.com</p>
+            </footer>
+        </div>
     </section>
     <script src="./index.js"></script>
 </body>
