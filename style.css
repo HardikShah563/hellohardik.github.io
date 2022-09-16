@@ -1,13 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
 :root {
     --white: #ffffff;
+    --off-white: #f1f1f1;
+    --grey: #838383;
     --black: #000000;
+    --matt-black: #171717;
+    --medium-blue: #1e3348;
+    --dark-blue: #1c252e;
+    --deep-blue: #081723;
+    --red: #ff4654;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Valorant';
+    src: url(./fonts/Valorant\ Font.ttf);
 }
 
 * {
@@ -18,6 +28,7 @@
     list-style-type: none;
     color: #ffffff;
     cursor: url('./res/custom-cursor-white.png'), auto;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -43,10 +54,10 @@ html {
 
 /* Parallax CSS */
 
-.wrapper{
+.wrapper {
     height: 100vh;
-    overflow: hidden; 
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, var(--medium-blue) 0%, var(--deep-blue) 100%);
 }
 
 /* Cursor CSS */
@@ -63,52 +74,23 @@ html {
     z-index: 2;
 }
 
-li:hover > .cursor{
+li:hover>.cursor {
     /* cursor: url('./res/custom-cursor-white-large.png'), auto; */
     height: 50px;
     width: 50px;
 }
 
 .box {
-    background-color: #000000aa;
+    background-color: var(--deep-blue);
     position: absolute;
-    top: 10vh;
-    left: 10vw;
-    z-index: 1;
-    display: block;
-    /* margin: 10vh auto auto auto; */
-    width: 80vw;
-    height: 80vh;
-    border: 1px solid var(--white);
+    top: 7vh;
+    left: 7vw;
+    width: 86vw;
+    height: 86vh;
+    border-left: 8px solid var(--red);
+    border-right: 8px solid var(--red);
     border-radius: 20px;
-}
-
-/* Navbar CSS */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px 20px 0 0;
-    font-size: 20px;
-    padding: 20px;
-    background-color: #151515;
-}
-
-.navbar li i {
-    margin: -10px 10px;
-    padding: 10px 10px;
-    font-size: 25px;
-}
-
-.navlink {
-    transition: 400ms;
-}
-
-.navlink:hover {
-    transform: scale(1.4);
-}
-
-.navlink-different {
-    /* do something different here */
+    overflow-y: scroll;
 }
 
 .hardik {
@@ -119,3 +101,427 @@ li:hover > .cursor{
     border-radius: 8px;
 }
 
+/* ============new nav bar =============== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--matt-black);
+    border-radius: 20px;
+}
+
+/* ---- navigation bar logo ---- */
+.logo label {
+    color: var(--golden);
+}
+
+.logo label {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+/* ---- navigation bar links ---- */
+.nav-links {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.nav-links li {
+    display: block;
+    margin: auto 10px;
+}
+
+.nav-links li a{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.nav-links li a i {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+hr {
+    width: 0%;
+    border: none;
+    transition: 300ms ease-in-out;
+}
+
+.nav-links li a:hover > hr {
+    width: 60%;
+    border: 1px solid var(--red);
+}
+
+.contact i {
+    transition: 300ms;
+}
+
+.contact i:hover {
+    rotate: 45deg;
+}
+
+/* navigation bar lines for collapsable nav bar */
+.nav-lines {
+    display: none;
+    margin: auto 0;
+}
+
+.line-full {
+    background-color: var(--white);
+    width: 20px;
+    height: 2px;
+    margin: 5px;
+}
+
+.line-half {
+    background-color: var(--white);
+    width: 10px;
+    height: 2px;
+    margin: 5px;
+}
+
+main {
+    height: 90%;
+}
+
+.name {
+    display: block;
+    margin: 10vw auto auto auto;
+}
+
+.name p {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Valorant';
+    color: var(--red);
+    margin: 20px;
+}
+
+.name h1 {
+    text-align: center;
+    --size: 3px;
+    font-size: 10vw;
+    font-family: 'Valorant';
+    letter-spacing: 2px;
+    color: var(--deep-blue);
+    text-shadow: 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.primary-button {
+    background-color: var(--matt-black);
+    border: 1px solid var(--red);
+    letter-spacing: 1px;
+    padding: 20px 4rem;
+    background: url(./res/paralellogram.svg);
+    background-size: 800%;
+    background-position: -8%;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.button-borders {
+    border: 1px dashed var(--red);
+    padding: 5px;
+}
+
+.primary-button:hover {
+    background-position: 10%;
+    border: 1px solid var(--off-white);
+}
+
+
+/* <======== About Me Section ========> */
+.title {
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Valorant';
+    color: var(--dark-blue);
+    background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 2%;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraph {
+    text-align: center;
+    letter-spacing: 2px;
+    width: 60vw;
+    margin: 2% auto 5% auto;
+    color: var(--off-white);
+}
+
+/* < ======== My Stack Section ======== > */
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: auto auto;
+
+}
+
+.stack i {
+    font-size: 2vw;
+    padding: 10px;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/* < ======== Experience Section ======== > */
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto auto;
+}
+
+.experiences {
+    text-align: center;
+    border: 1px dashed var(--red);
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.experiences img {
+    margin: auto auto;
+    width: 100px;
+    height: auto;
+}
+
+.info {
+    width: auto;
+    margin-left: 20px;
+}
+
+.experiences h3 {
+    display: inline-block;
+    font-family: 'Valorant';
+    color: var(--red);
+    font-size: 30px;
+    text-shadow: 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white);
+}
+
+.experiences h4 {
+    display: block;
+    margin: 10px 0;
+}
+
+.experiences p {
+    display: flex;
+}
+
+/* .experiences h3 {
+    --size: 2px;
+    position: relative;
+    writing-mode:vertical-rl;
+    font-size: 40px;
+    font-family: 'Valorant';
+    text-align: right;
+    color: var(--deep-blue);
+    text-shadow: 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white);
+} */
+
+/* .experiences h4 {
+    position: relative;
+    bottom: 80%;
+}
+
+.experiences p {
+    position: relative;
+    bottom: 60%;
+} */
+
+/* < ======== Footer Section ======== > */
+footer {
+    background-color: var(--matt-black);
+    text-align: center;
+    padding: 2%;
+}
+
+.social-media-icons i {
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    transition: 300ms;
+}
+
+.social-media-icons i:hover {
+    background-color: var(--red);
+}
+
+/* < ======== Common to all sections ======== > */
+.section {
+    margin: 10% auto 10% auto;
+}
+
+.section-divider {
+    width: 60%;
+    margin: auto auto auto auto;
+    border: 0.5px solid var(--grey);
+}
+
+@media (max-width: 1000px) { 
+    .nav-lines {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        margin: 0 0;
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color: var(--matt-black);
+        transform: 200ms;
+        overflow: hidden;
+        transition: 200ms;
+    }
+
+    .nav-links.active {
+        height: 80%;
+    }
+
+    .nav-links li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .name {
+        margin: 5vw auto auto auto;
+    }
+
+    .name h1 {
+        font-size: 15vw;
+    }
+
+    .primary-button {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 8vw;
+    }
+
+    .stack i {
+        font-size: 3vw;
+        padding: 8px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo label {
+        font-size: 16px;
+    }
+
+    .name h1 {
+        font-size: 20vw;
+    }
+
+    .title {
+        font-size: 12vw;
+    }
+
+    .subtitle {
+        font-size: 3vw;
+    }
+
+    .paragraph {
+        font-size: 2vw;
+    }
+
+    .stack i {
+        font-size: 5vw;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 50vh auto 50vh auto;
+        font-size: 3vw;
+    }
+
+    .social-media-icons i {
+        padding: 0px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box {
+        left: 2vw;
+        top: 5vh;
+        width: 96%;
+        height: 90%;
+        border-top: 5px solid var(--red);
+        border-bottom: 5px solid var(--red);
+        border-left: none;
+        border-right: none;
+    }
+
+    .name {
+        margin: 10vh auto auto auto;
+    }
+
+    .container {
+        margin: 10vh auto auto auto;
+    }
+
+    .primary-button {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: var(--black);
+}
+
+
+/* 
+border-width: 2px;
+border-image: linear-gradient(45deg, red , yellow);
+border-image-slice: 1; 
+*/
+
+/* 
+border-image: linear-gradient(to top, var(--red), var(--medium-blue)) 1 100%;
+border-image-slice: 1; 
+*/
