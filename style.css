@@ -243,6 +243,21 @@ main {
     border: 1px solid var(--off-white);
 }
 
+/* < ======== Horizontal Text Scroll Effect */
+.line-1 h1 {
+    display: block;
+    position: relative;
+    top: 90%;
+    left: -800px;
+    /* white-space: nowrap; */
+    font-size: 150px;
+    --size: 2px;
+    --color1: #505050;
+    color: var(--deep-blue);
+    text-shadow: 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1);
+}
+
+
 
 /* <======== About Me Section ========> */
 .title {
@@ -250,7 +265,9 @@ main {
     font-size: 6vw;
     font-family: 'Valorant';
     color: var(--dark-blue);
-    background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue));
+    /* background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue)); */
+    /* background-color: var(--white); */
+    background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -278,13 +295,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 60%;
+    width: 60vw;
     margin: auto auto;
 
 }
 
 .stack i {
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 10px;
     color: var(--red);
     border: 2px solid var(--red);
@@ -302,41 +319,29 @@ main {
 }
 
 .experiences {
+    /* width: auto; */
     text-align: center;
-    border: 1px dashed var(--red);
-    width: 30%;
-    height: 300px;
-    margin: 20px;
-    padding: 20px;
 }
 
-.experiences img {
-    margin: auto auto;
-    width: 100px;
-    height: auto;
-}
-
-.info {
-    width: auto;
-    margin-left: 20px;
-}
-
-.experiences h3 {
-    display: inline-block;
-    font-family: 'Valorant';
-    color: var(--red);
-    font-size: 30px;
-    text-shadow: 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white);
-}
-
-.experiences h4 {
-    display: block;
-    margin: 10px 0;
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
 }
 
 .experiences p {
-    display: flex;
+    width: 60%;
+    margin: auto auto;
 }
+
+.experiences img {
+    width: 200px;
+    height: auto;
+    margin: auto auto;
+}
+
+
 
 /* .experiences h3 {
     --size: 2px;
@@ -358,6 +363,47 @@ main {
     position: relative;
     bottom: 60%;
 } */
+
+
+/* < ======== Contact Me Section ======== > */
+.details-hr {
+    width: 60%;
+    margin: auto auto;
+}
+
+.details-hr p {
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.details-hr hr {
+    border: 0.5px solid var(--grey);
+    width: 100%;
+}
+
+form {
+    width: 40%;
+    margin: auto auto;
+}
+
+form p {
+    font-size: 12px;
+    margin: 10px 0px;
+    color: var(--grey);
+}
+
+input, textarea {
+    width: 100%;
+    resize: none;
+    background-color: var(--medium-blue);
+    border: 1px solid var(--off-white);
+}
+
+input {
+    height: 50px;
+}
 
 /* < ======== Footer Section ======== > */
 footer {
@@ -442,6 +488,12 @@ footer {
     }
 }
 
+@media (max-width: 800px) {
+    .cursor {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .logo label {
         font-size: 16px;
@@ -452,7 +504,7 @@ footer {
     }
 
     .title {
-        font-size: 12vw;
+        font-size: 9vw;
     }
 
     .subtitle {
@@ -464,9 +516,13 @@ footer {
     }
 
     .stack i {
-        font-size: 5vw;
+        font-size: 6vw;
         padding: 8px;
         margin: 10px;
+    }
+
+    .details-hr {
+        width: 80%;
     }
 
     footer {
