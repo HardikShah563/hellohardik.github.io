@@ -320,18 +320,29 @@ main {
 
 .td {
     display: flex;
+    position: relative;
     width: 60%;
     /* justify-content: center; */
     margin: 10px auto;
     padding: 10px;
     font-size: 1vw;
-    border: 1px solid var(--red);
+    background-color: var(--dark-blue);
     transition-duration: 200ms;
 }
 
 .td:hover {
-    transform:  scale(1.1);
-    background-color: var(--off-white);
+    transform:  scale(1.4);
+    background-color: var(--medium-blue);
+}
+
+.stack-title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 60%;
+    margin: auto auto;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .stack-name p {
@@ -352,9 +363,20 @@ main {
     height: 10px;
 }
 
-.td:hover > .rank-bar {
-    border: 1px solid var(--black);
-    background-color: var(--red);
+.stack-percentage p {
+    color: var(--red);
+}
+
+.absolute-text {
+    font-family: 'Valorant';
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-size: 14vw;
+    right: 0;
+    color: var(--deep-blue);
+    --size: 2px;
+    --color1: #404040;
+    text-shadow: 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1);
 }
 
 /* < ======== Experience Section ======== > */
@@ -538,8 +560,17 @@ footer {
     }
 
     .td {
-        width: 80%;
-        font-size: 12px;
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .stack-title {
+        width: 70%;
+        font-size: 10px;
+    }
+    
+    .absolute-text {
+        font-size: 20vw;
     }
 
     form {
@@ -551,6 +582,10 @@ footer {
 @media (max-width: 800px) {
     .cursor {
         display: none;
+    }
+    
+    .absolute-text {
+        display: 20vw;
     }
 }
 
@@ -583,7 +618,16 @@ footer {
 
     .td {
         width: 95%;
+        font-size: 8px;
+    }
+
+    .stack-title {
+        width: 95%;
         font-size: 10px;
+    }
+    
+    .absolute-text {
+        display: none;
     }
 
     .rank-bar {
