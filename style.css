@@ -96,6 +96,7 @@ li:hover>.cursor {
     border-right: 8px solid var(--red);
     border-radius: 20px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .hardik {
@@ -131,7 +132,7 @@ nav {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
     height: 20px;
     margin: 0 20px;
 }
@@ -148,11 +149,6 @@ nav {
     transition: 300ms;
 }
 
-.nav-links li a i {
-    color: var(--grey);
-    font-size: 14px;
-}
-
 a hr {
     width: 0%;
     border: none;
@@ -166,10 +162,6 @@ a hr {
 
 .contact i {
     transition: 300ms;
-}
-
-.contact i:hover {
-    rotate: 45deg;
 }
 
 /* navigation bar lines for collapsable nav bar */
@@ -194,6 +186,20 @@ a hr {
 
 main {
     height: 90%;
+}
+
+.cool-text-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto auto;
+    border-bottom: 1px solid var(--grey);
+}
+
+.cool-text-1 p {
+    margin: 5px 10px;
+    font-size: 14px;
+    color: var(--grey);
 }
 
 .name {
@@ -292,9 +298,22 @@ main {
     position: relative;
     letter-spacing: 2px;
     width: 60vw;
-    margin: 2% auto 5% auto;
+    margin: auto auto;
     color: var(--off-white);
     z-index: 2;
+}
+
+.slash-section-divider {
+    display: flex;
+    width: 60%;
+    height: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slash-section-divider img {
+    display: flex;
+    height: 30px;
 }
 
 /* <======== About Me Section ========> */
@@ -406,10 +425,11 @@ main {
     margin: 20px;
 }
 
-.experience-para {
-    width: 80%;
-    text-align: left;
-    margin: 50px 0;
+.exp-binary {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: var(--grey);
+    margin: 5px 0;
 }
 
 .exp-title {
@@ -418,12 +438,19 @@ main {
     font-family: 'Tungsten';
     color: var(--off-white);
     border-top: 2px solid var(--medium-blue);
-    /* text-shadow: 0px 0px 100px var(--medium-blue); */
 }
 
 .exp-subtitle {
     letter-spacing: 2px;
     margin: 20px 0;
+}
+
+.experience-para {
+    width: 80%;
+    text-align: left;
+    margin: 50px 0;
+    font-size: 14px;
+    color: var(--grey);
 }
 
 .experience-grid {
@@ -466,6 +493,25 @@ main {
     width: 80%;
     margin: 5px 0;
     border: 0.5px solid var(--grey);
+}
+
+.below-lines {
+    display: flex;
+}
+
+.below-line1, .below-line2 {
+    margin: 40px 10px 0px 0px;
+    height: 2px;
+    background-color: var(--off-white);
+    box-shadow: 0px 0px 5px var(--red);
+}
+
+.below-line1 {
+    width: 50px; 
+}
+
+.below-line2 {
+    width: 150px;
 }
 
 /* .experiences h3 {
@@ -559,6 +605,16 @@ footer {
     border: 0.5px solid var(--grey);
 }
 
+@media (max-width: 1400px) {
+    .nav-links {
+        margin-right: 50px;
+    }
+
+    .name {
+        margin: 20vh 0 0 0;
+    }
+}
+
 @media (max-width: 1000px) { 
     .nav-lines {
         display: block;
@@ -590,8 +646,12 @@ footer {
         justify-content: center;
     }
 
+    .cool-text-1 p {
+        font-size: 12px;
+    }
+
     .name {
-        margin: 5vw auto auto auto;
+        margin: 20vh auto auto auto;
     }
 
     .name h1 {
@@ -645,6 +705,18 @@ footer {
 @media (max-width: 600px) {
     .logo label {
         font-size: 16px;
+    }
+
+    .cool-text-1 p {
+        font-size: 8px;
+    }
+
+    .name {
+        margin: 30vw auto auto auto;
+    }
+
+    .name p {
+        font-size: 6vw;
     }
 
     .name h1 {
@@ -780,3 +852,6 @@ border-image-slice: 1;
 border-image: linear-gradient(to top, var(--red), var(--medium-blue)) 1 100%;
 border-image-slice: 1; 
 */
+
+/* display: grid;
+place-items: center; */
