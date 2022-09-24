@@ -185,7 +185,7 @@ a hr {
 }
 
 main {
-    height: 90%;
+    height: 60%;
 }
 
 .cool-text-1 {
@@ -317,13 +317,18 @@ main {
 }
 
 /* <======== About Me Section ========> */
+
+.about-me {
+    width: 90%;
+}
+
 .absoulte-text-about h1 {
     top: -100px;
 }
 
 .about-content {
     width: 60%;
-    margin: 100px auto;
+    margin: 70px auto;
 }
 
 .education-title {
@@ -331,12 +336,16 @@ main {
     padding: 10px 0;
     border-bottom: 1px solid var(--grey);
     color: var(--grey);
+    position: relative;
+    z-index: 2;
 }
 
 .about-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .education {
@@ -424,6 +433,20 @@ main {
     margin: 10px;
 }
 
+.relative-text {
+    font-family: 'Valorant';
+    font-size: 25vw;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* top: -850px; */
+    left: -100px;
+    color: var(--deep-blue);
+    --size: 1px;
+    --color1: #404040;
+    text-shadow: 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1);
+}
+
 /* < ======== My Stack Section ======== > */
 .stack {
     display: flex;
@@ -471,9 +494,11 @@ main {
     justify-content: space-between;
     position: relative;
     width: 60%;
+    padding: 5px 0;
     margin: auto auto;
     font-size: 12px;
     letter-spacing: 1px;
+    border-bottom: 1px solid var(--grey);
 }
 
 .stack-name p {
@@ -825,11 +850,20 @@ footer {
     .hobby i {
         font-size: 24px;
     }
+
+    .relative-text {
+        font-size: 30vw;
+    }
 }
 
 @media (max-width: 600px) {
     .logo label {
         font-size: 16px;
+    }
+
+
+    main {
+        height: 90%;
     }
 
     .cool-text-1 p {
@@ -892,6 +926,10 @@ footer {
         width: 80%;
         margin: auto auto;
         font-size: 12px;
+    }
+
+    .relative-text {
+        display: none;
     }
 
     .stack i {
