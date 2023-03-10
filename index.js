@@ -27,8 +27,8 @@ navLines.addEventListener("click", () => {
 // // }
 
 // My Stack printting divs: 
-var stackName = ['HTML', 'CSS', 'JavaScript', 'React', 'Node JS', 'Python', 'C', 'C++', 'Github', 'npm', 'figma', 'Photoshop', 'PremierePro'];
-var stackPercentage = ['90', '70', '50', '40', '20', '60', '40', '30', '60', '70', '10', '30', '80'];
+var stackName = ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'Flask', 'C', 'C++', 'Github', 'npm', 'figma', 'Photoshop', 'PremierePro'];
+var stackPercentage = ['90', '80', '70', '80', '60', '40', '40', '30', '60', '70', '10', '30', '80'];
 
 var subtitle = document.getElementById("stack-title");
 

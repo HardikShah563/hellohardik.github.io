@@ -7,6 +7,7 @@
     --medium-blue: #1e3348;
     --dark-blue: #1c252e;
     --deep-blue: #081723;
+    --deep-blue-transparent: #081723d0;
     --red: #ff4654;
 }
 
@@ -34,6 +35,7 @@
     color: #ffffff;
     cursor: url('./res/custom-cursor-white.png'), auto;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 li {
@@ -86,7 +88,7 @@ li:hover>.cursor {
 }
 
 .box {
-    background-color: var(--deep-blue);
+    background-color: var(--deep-blue-transparent);
     position: absolute;
     top: 7vh;
     left: 7vw;
@@ -391,6 +393,7 @@ main {
     background-color: var(--red);
 }
 
+
 .red-line-bottom {
     position: relative;
     width: 40%;
@@ -439,8 +442,10 @@ main {
     text-align: center;
     position: relative;
     z-index: 1;
-    /* top: -850px; */
-    left: -100px;
+    top: 100px;
+    /* left: -10px; */
+    left: 50%;
+    transform: translateX(-50%);
     color: var(--deep-blue);
     --size: 1px;
     --color1: #404040;
@@ -537,7 +542,6 @@ main {
 
 /* < ======== Experience Section ======== > */
 .experience-section {
-    /* background-color: var(--medium-blue); */
     padding: 2% 0;
 }
 
@@ -549,7 +553,7 @@ main {
 }
 
 .experience-text {
-    width: 50%;
+    width: 70%;
     margin: 20px;
 }
 
@@ -579,6 +583,7 @@ main {
     margin: 50px 0;
     font-size: 14px;
     color: var(--grey);
+    text-align: justify;
 }
 
 .experience-grid {
@@ -603,9 +608,6 @@ main {
     background-color: var(--medium-blue);
     box-shadow: 0px 0px 100px var(--matt-black);
     transform: scale(1.05);
-    border-left: 4px solid var(--red);
-    border-right: 4px solid var(--red);
-    border: 4px solid var(--red);
 }
 
 .inter-div {
@@ -642,27 +644,10 @@ main {
     width: 150px;
 }
 
-/* .experiences h3 {
-    --size: 2px;
-    position: relative;
-    writing-mode:vertical-rl;
-    font-size: 40px;
-    font-family: 'Valorant';
-    text-align: right;
-    color: var(--deep-blue);
-    text-shadow: 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white), 0px 0px var(--size) var(--white);
-} */
-
-/* .experiences h4 {
-    position: relative;
-    bottom: 80%;
+.below-button {
+    justify-content: left;
+    margin-left: 0;
 }
-
-.experiences p {
-    position: relative;
-    bottom: 60%;
-} */
-
 
 /* < ======== Contact Me Section ======== > */
 .details-hr {
@@ -700,8 +685,12 @@ input, textarea {
     border: 1px solid var(--off-white);
 }
 
-input {
+form input, button {
     height: 50px;
+}
+
+form button {
+    width: 100%;
 }
 
 /* < ======== Footer Section ======== > */
@@ -711,15 +700,84 @@ footer {
     padding: 2%;
 }
 
-.social-media-icons i {
+.social-media-icons a {
     font-size: 30px;
     padding: 10px;
     margin: 20px;
     transition: 300ms;
 }
 
-.social-media-icons i:hover {
-    background-color: var(--red);
+.social-media-icons a:hover {
+    color: var(--red);
+}
+
+.heading {
+    margin-bottom: 20px;
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.links {
+    font-size: 12px;
+}
+
+.invitation {
+    width: 180px;
+    margin: auto auto;
+}
+
+.business {
+    color: var(--matt-black);
+    text-shadow: 0px 0px 1px var(--grey);
+}
+
+/* Newsletter Form */
+.newsletter-label {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.newsletter form {
+    margin: 20px 0 0 0;
+    padding: 0px;
+    width: 100%;
+}
+
+#email {
+    width: 200px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.newsletter-button {
+    background-color: var(--medium-blue);
+    width: 100px;
+    height: 32px;
+    border: 1px solid var(--medium-blue);
+    border-radius: 8px;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.credits a {
+    color: var(--red);
+    font-size: 18px;
+}
+
+.last-statements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }
 
 /* < ======== Common to all sections ======== > */
@@ -828,6 +886,29 @@ footer {
         width: 60%;
         margin: 50px auto;
     }
+
+    .primary-button {
+        margin: auto auto;
+    }
+
+    .experience-para {
+        width: 100%;
+    }
+
+    .experience-text {
+        width: 100%;
+        margin: auto auto;
+    }
+    
+    .experience {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .footer-section {
+        margin: 20px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -853,6 +934,18 @@ footer {
 
     .relative-text {
         font-size: 30vw;
+    }
+
+    .experience {
+        width: 100%;
+    }
+
+    .exp {
+        width: 100%;
+    }
+
+    .exp p {
+        font-size: 10px;
     }
 }
 

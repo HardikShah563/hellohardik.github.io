@@ -1,0 +1,67 @@
+:root {
+    --white: #ffffff;
+    --off-white: #f1f1f1;
+    --grey: #838383;
+    --black: #000000;
+    --matt-black: #171717;
+    --medium-blue: #1e3348;
+    --dark-blue: #1c252e;
+    --deep-blue: #081723;
+    --deep-blue-transparent: #081723d0;
+    --red: #ff4654;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer .personal {
+    text-align: left;
+    font-weight: 900;
+}
+
+.footer .personal p {
+    font-size: 28px
+}
+
+.social-media {
+    display: flex;
+    align-items: left;
+    font-size: 1.5rem;
+}
+
+.social-media a {
+    margin: 10px 20px 10px 0;
+}
+
+.personal p span {
+    color: var(--red);
+}
+
+.footer .footer-section {
+    min-width: 200px;
+}
+
+.newsletter {
+    display: block;
+    justify-content: left;
+}
+
+.newsletter input {
+    width: 100px;
+    left: 0px;
+    margin: 10px 0;
+    height: 40px;
+}
+
+.newsletter-form .primary-button {
+    padding: 10px 20px;
+}
+
+.newsletter-form .newsletter-submit {
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    background-color: var(--deep-blue);
+}

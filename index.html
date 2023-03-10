@@ -8,6 +8,7 @@
     <title>Hello Hardik</title>
     <!-- Style sheet -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./footer-test.css" />
     <link rel="stylesheet" href="./parallax/parallax.css" />
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/6d232ec003.js" crossorigin="anonymous"></script>
@@ -30,17 +31,23 @@
                     <label>Hello <span class="hardik">Hardik</span></label>
                 </div>
                 <div class="nav-links">
-                    <li><a href="#">ABOUT <hr>
+                    <li><a href="#about-section">ABOUT
+                            <hr>
                         </a> </li>
-                    <li><a href="#">SKILLS <hr>
+                    <li><a href="#skills-section">SKILLS
+                            <hr>
                         </a> </li>
-                    <li><a href="#">EXPERIENCE <hr>
+                    <li><a href="#experience-section">EXPERIENCE
+                            <hr>
                         </a> </li>
-                    <li><a href="#">PROJECTS <hr>
+                    <li><a href="#projects-section">PROJECTS
+                            <hr>
                         </a> </li>
-                    <li><a href="#">ACHIEVEMENTS <hr>
+                    <li><a href="#achievements-section">ACHIEVEMENTS
+                            <hr>
                         </a> </li>
-                    <li class="contact"><a href="#">CONTACT <hr>
+                    <li class="contact"><a href="#contact-section">CONTACT
+                            <hr>
                         </a> </li>
                 </div>
                 <div class="nav-lines">
@@ -57,13 +64,13 @@
                 </div>
                 <div class="cool-text-1">
                     <p>// IT'S MY PORTFOLIO</p>
-                    <p>Version 1.0.1</p>
+                    <p>Version 2.0.1</p>
                 </div>
                 <!-- https://www.youtube.com/watch?v=nxoHR9lltK0 -->
                 <div class="container">
                     <div class="button-box">
                         <div class="button-borders">
-                            <button class="primary-button">KNOW MORE ABOUT ME</button>
+                            <a href="#about-me" class="primary-button">KNOW MORE ABOUT ME</a>
                         </div>
                     </div>
                 </div>
@@ -71,21 +78,21 @@
 
             <!-- <hr class="section-divider"> -->
 
+            <div class="relative-text" id="about-section">ABOUT</div>
             <section class="about-me section" id="about-me">
-                <div class="relative-text">ABOUT</div>
                 <h1 class="title">ABOUT ME</h1>
                 <h4 class="subtitle">I'M NOT A GAMER</h4>
                 <p class="paragraph">I'm a passionate front end developer with an experience of building commercial
-                    projects. The thoughts of running an empire aspires me to do what I do. 
+                    projects. The thoughts of running an empire aspires me to do what I do.
                 </p>
-                
+
                 <div class="about-content">
                     <p class="education-title">[&nbsp;&nbsp;&nbsp;EDUCATION&nbsp;&nbsp;&nbsp;]</p>
                     <div class="about-container">
                         <div class="education hover-effect1">
                             <p>BTech in Electronics Engineering</p>
                             <p>from</p>
-                            <p>K. J. Somaiya College of Engineering</p>
+                            <p>K. J. Somiaya College of Engineering</p>
                             <p>[&nbsp;2021 - 2025&nbsp;]</p>
                             <div class="red-line-bottom"></div>
                         </div>
@@ -132,12 +139,12 @@
 
             <section class="my-stack section" id="my-stack">
                 <p class="absolute-text">SKILLSET</p>
-                <h1 class="title">MY STACK</h1>
+                <h1 class="title" id="skills-section">MY STACK</h1>
                 <h4 class="subtitle" id="subtitle">A.K.A. SKILLS</h4>
                 <div class="my-stack-table">
                     <div class="stack-title" id="stack-title">
                         <p># TOOLS AND LANGUAGE</p>
-                        <p>EFFECIENCY <<</p>
+                        <p>EFFECIENCY <<< /p>
                     </div>
                     <!-- Printing values using javascript -->
                     <!-- <div class="td">
@@ -165,12 +172,15 @@
                             <h1 class="exp-title">EXPERIENCES</h1>
                             <h4 class="exp-subtitle">THE PART WHERE I GRINDED</h4>
                         </div>
-                        <div class="experience-para paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Delectus unde ut corporis? Nesciunt in suscipit voluptas obcaecati ex illo, quasi
-                            doloremque. Cupiditate enim nisi laudantium itaque ad nihil minus dignissimos, eum suscipit
-                            iusto aspernatur facere, tenetur, eius omnis vitae totam!</div>
+                        <div class="experience-para paragraph">This website is a static page with over 2000 lines of
+                            CSS. This is not a portfolio website but it describes what I do on a regular basis.
+                            Do not consider this website as my portfolio. Though you can take this as a project to
+                            pratice CSS extensively. 
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
                         <div class="below-button">
-                            <button class="primary-button">VIEW ALL EXPERIENCES</button>
+                            <div class="container below-button">
+                                <a href="./pages/experiences.html" class="primary-button">View all Experiences!</a>
+                            </div>
                             <div class="below-lines">
                                 <div class="below-line1"></div>
                                 <div class="below-line1"></div>
@@ -180,21 +190,14 @@
                     </div>
                     <div class="experience-grid">
                         <div class="exp">
-                            <h2>Team KJSCE Robocon</h2>
+                            <h2>Helbent Labs</h2>
                             <hr class="exp-inter-div-hr">
                             <div class="inter-div">
-                                <p>Management Team</p>
-                                <p>[Oct 2021 - Sept 2022]</p>
+                                <p>Web Developer</p>
+                                <p>[Sept 2022 - .... 202-]</p>
                             </div>
                         </div>
-                        <div class="exp">
-                            <h2>E-Cell IIT Hyderabad</h2>
-                            <hr class="exp-inter-div-hr">
-                            <div class="inter-div">
-                                <p>Campus Ambasaddor</p>
-                                <p>[Dec 2021 - Jan 2022]</p>
-                            </div>
-                        </div>
+
                         <div class="exp">
                             <h2>KJSCE Codecell</h2>
                             <hr class="exp-inter-div-hr">
@@ -203,12 +206,22 @@
                                 <p>[Sept 2022 - .... 2023]</p>
                             </div>
                         </div>
+
                         <div class="exp">
-                            <h2>Helbent Labs</h2>
+                            <h2>Team KJSCE Robocon</h2>
                             <hr class="exp-inter-div-hr">
                             <div class="inter-div">
-                                <p>Web Developer</p>
-                                <p>[Sept 2022 - .... 202-]</p>
+                                <p>Management Team</p>
+                                <p>[Oct 2021 - Sept 2022]</p>
+                            </div>
+                        </div>
+
+                        <div class="exp">
+                            <h2>E-Cell IIT Hyderabad</h2>
+                            <hr class="exp-inter-div-hr">
+                            <div class="inter-div">
+                                <p>Campus Ambasaddor</p>
+                                <p>[Dec 2021 - Jan 2022]</p>
                             </div>
                         </div>
                     </div>
@@ -219,11 +232,20 @@
 
             <hr class="section-divider">
 
-            <!-- <section class="achievements-section section" id="achievements-section">
+            <section class="achievements-section section" id="achievements-section">
+                <h1 class="title">PROJECTS & CONTRIBUTIONS</h1>
+                <h4 class="subtitle">ITS ALWAYS A PROUD FEELING</h4>
+                <p class="paragraph">-- Nothing yet --</p>
+            </section>
+
+
+            <hr class="section-divider">
+
+            <section class="achievements-section section" id="achievements-section">
                 <h1 class="title">ACHIEVEMENTS</h1>
                 <h4 class="subtitle">ITS ALWAYS A PROUD FEELING</h4>
                 <p class="paragraph">-- Nothing yet --</p>
-            </section> -->
+            </section>
 
             <hr class="section-divider">
 
@@ -241,18 +263,61 @@
                     <input type="text">
                     <p>DESCRIPTION</p>
                     <textarea name="description" id="description" cols="20" rows="8"></textarea>
+                    <button disabled="disabled">SORRY! This form doesn't work. Though you can EMAIL ME!</button><br>
+                    <div class="container">
+                        <a href="mailto:hardikts@gmail.com" class="primary-button">EMAIL ME!</a>
+                    </div>
                 </form>
             </section>
 
+            <footer class="footer">
+                <div class="footer-section personal">
+                    <p>hello<span>hardik</span></p>
+                    <div class="social-media">
+                        <a href="https://github.com/HardikShah563"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/hellohardik.xyz/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/HardikS31529775"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/hardik-shah-62a7851b2/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <p class="heading">Business</p>
+                    <p class="links invitation">We can talk business if you frame it correctly</p>
+                    <a class="link business" href="mailto:hellohardik563@gmail.com">Here</a>
+                </div>
+
+                <div class="footer-section">
+                    <p class="heading">Interests</p>
+                    <a class="links" href="https://hey-its-hardik.blogspot.com">I wrote blogs</a>
+                    <a class="links" href="#">I freelance</a>
+                    <a class="links" href="#">I code</a>
+                    <a class="links" href="#">You name it, I'll do it</a>
+                </div>
+
+                <div class="footer-section">
+                    <div class="newsletter">
+                        <p class="heading"><i class="fa-solid fa-envelope"></i> Hear from me</p>
+                        <form class="newsletter-form" action="#">
+                            <label class="newsletter-label" for="email">Enter your email id: </label>
+                            <input class="newsletter-input" type="email" name="email" id="email">
+                            <button class="newsletter-button">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
             <footer>
                 <div class="social-media-icons">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/HardikShah563" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://www.instagram.com/hellohardik.xyz/" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://twitter.com/HardikS31529775" target="_blank" class="fa-brands fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/hardik-shah-62a7851b2/" target="_blank" class="fa-brands fa-linkedin"></a>
                 </div>
-                <p>Made with <i class="fa-solid fa-heart"></i> by Hardik Shah</p>
-                <p>&copy; 2022 copyright | hellohardik.com</p>
+                <div class="last-statements">
+                    <p class="credits">Made with <i class="fa-solid fa-heart"></i> by <a href="https://github.com/HardikShah563">Hardik Shah</a></p>
+                    <p>&copy; 2022 copyright | hellohardik.com</p>
+                </div>
             </footer>
         </div>
     </section>
