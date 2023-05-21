@@ -1130,6 +1130,33 @@ footer {
     }
 }
 
+.arrow img {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.arrow a img {
+    width: 50px;
+    rotate: 180deg;
+    -webkit-filter: drop-shadow(0px 0px 1px var(--off-white));
+    filter: drop-shadow(0px 0px 1px var(--off-white));
+    transition: all 200ms ease;
+}
+
+.arrow a img:hover {
+    -webkit-filter: drop-shadow(0px 0px 3px var(--off-white));
+    filter: drop-shadow(0px 0px 3px var(--off-white));
+}
+
+.arrow .tothetop {
+    font-size: 10px;
+    color: var(--grey);
+    position: absolute;
+    right: 12px;
+    bottom: 5px;
+}
+
 /* Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 0px;
