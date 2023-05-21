@@ -716,10 +716,12 @@ footer {
     color: var(--red);
     font-size: 20px;
     font-weight: 600;
+    text-align: centre;
 }
 
 .links {
     font-size: 12px;
+    text-align: centre;
 }
 
 .invitation {
