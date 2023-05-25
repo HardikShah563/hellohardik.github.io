@@ -27,30 +27,60 @@ navLines.addEventListener("click", () => {
 // // }
 
 // My Stack printting divs: 
-var stackName = ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'Flask', 'C', 'C++', 'Github', 'npm', 'figma', 'Photoshop', 'PremierePro'];
-var stackPercentage = ['90', '80', '70', '80', '60', '40', '40', '30', '60', '70', '10', '30', '80'];
+var stackName = ['HTML', 
+                'CSS', 
+                'JavaScript', 
+                'React', 
+                'Python', 
+                'Flask', 
+                'php', 
+                'C', 
+                'C++', 
+                'Github', 
+                'npm', 
+                'Editing'
+            ];
 
-var subtitle = document.getElementById("stack-title");
+var stackClass = ['fa-brands fa-html5', 
+                    'fa-brands fa-css3', 
+                    'fa-brands fa-square-js', 
+                    'fa-brands fa-react', 
+                    'fa-brands fa-python', 
+                    'fa-solid fa-pepper-hot fa-flip-horizontal', 
+                    'fa-brands fa-php', 
+                    'fa-solid fa-c', 
+                    'fa-solid fa-c', 
+                    'fa-brands fa-github', 
+                    'fa-brands fa-npm', 
+                    'fa-solid fa-sliders', 
+                ];
+
+
+var subtitle = document.getElementById("empty-block");
 
 function createStack() {
     for (i = stackName.length - 1; i >= 0; i--) {
         // console.log(stackName[i]);
-        let newStack = `<div class="td">
-        <div class="stack-name">
-            <p>${stackName[i]}</p>
-        </div>
-        <div class="rank-bar">
-            <div class="ranking" style="width: ${stackPercentage[i]}%"></div>
-        </div>
-        <div class="stack-percentage">
-            <p>${stackPercentage[i]}%</p>
-        </div>
-    </div>`;
+        let newStack = `
+        <div class="block" id = "${i}" onclick = "activeToggle(${i})">
+            <i class="${stackClass[i]}"></i>
+            <div class="block-text">${stackName[i]}</div>
+        </div>`;
         subtitle.insertAdjacentHTML("afterend", newStack);
     }
     console.log("CreateStack works");
 }
 createStack();
+
+const block = document.querySelector(".block");
+var past = 0;
+
+function activeToggle(id_no) {
+    document.getElementById(`${past}`).classList.remove("activeToggle");
+    var idNo = document.getElementById(`${id_no}`);
+    idNo.classList.add("activeToggle");
+    past = id_no;
+}
 
 function createDivider() {
     for (i = 0; i < 50; i ++) {

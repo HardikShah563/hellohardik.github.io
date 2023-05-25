@@ -3,7 +3,9 @@
     --off-white: #f1f1f1;
     --grey: #838383;
     --black: #000000;
+    --golden: #e5b465;
     --matt-black: #171717;
+    --light-blue: #30c0d8;
     --medium-blue: #1e3348;
     --dark-blue: #1c252e;
     --deep-blue: #081723;
@@ -32,7 +34,7 @@
     box-sizing: border-box;
     font-family: 'Poppins';
     list-style-type: none;
-    color: #ffffff;
+    color: var(--white);
     cursor: url('./res/custom-cursor-white.png'), auto;
     scroll-behavior: smooth;
     user-select: none;
@@ -95,10 +97,26 @@ li:hover>.cursor {
     width: 86vw;
     height: 86vh;
     border-left: 8px solid var(--red);
-    border-right: 8px solid var(--red);
-    border-radius: 20px;
+    border: 6px solid var(--red);
+    /* border-radius: 20px; */
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.left-border, .right-border {
+    position: fixed;
+    z-index: 200;
+    top: 30vh;
+    height: 300px;
+    border: 8px solid var(--red);
+}
+
+.left-border {
+    left: 7vw;
+}
+
+.right-border {
+    right: 7vw;
 }
 
 .hardik {
@@ -109,10 +127,14 @@ li:hover>.cursor {
     border-radius: 8px;
 }
 
+.red {
+    color: var(--red);
+}
+
 /* ============new nav bar =============== */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     background-color: var(--matt-black);
     border-radius: 20px;
@@ -462,70 +484,8 @@ main {
 
 }
 
-.stack i {
-    font-size: 3vw;
-    padding: 10px;
-    color: var(--red);
-    border: 2px solid var(--red);
-    border-radius: 12px;
-    margin: 20px;
-}
-
 .my-stack-table {
     margin: auto auto;
-}
-
-.td {
-    display: flex;
-    position: relative;
-    width: 60%;
-    /* justify-content: center; */
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 1vw;
-    background-color: var(--dark-blue);
-    transition-duration: 200ms;
-}
-
-.td:hover {
-    transform:  scale(1.4);
-    background-color: var(--medium-blue);
-    border: 1px solid var(--grey);
-    box-shadow: 0px 0px 100px var(--matt-black);
-}
-
-.stack-title {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 60%;
-    padding: 5px 0;
-    margin: auto auto;
-    font-size: 12px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid var(--grey);
-}
-
-.stack-name p {
-    width: 5vw;
-}
-
-.rank-bar {
-    width: 40%;
-    margin: auto auto;
-    background-color: var(--off-white);
-    border: 0.5px solid var(--off-white);
-}
-
-.ranking {
-    background-color: var(--red);
-    margin: 0;
-    width: 80%;
-    height: 10px;
-}
-
-.stack-percentage p {
-    color: var(--red);
 }
 
 .absolute-text {
@@ -649,6 +609,68 @@ main {
     margin-left: 0;
 }
 
+/* < ======== New Stack Section ======== > */
+.display-box {
+    height: 400px;
+    width: 60%;
+    margin: 10px auto;
+    background-color: var(--deep-blue);
+    border: 1px solid var(--light-blue);
+    /* temporary part - remove after dope shit comes up */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Valorant';
+    font-size: 32px;
+    color: var(--red);
+}
+
+.select-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    width: 60%;
+    margin: 10px auto;
+    background-color: var(--deep-blue);
+    scroll-behavior: smooth;
+}
+
+.block {
+    overflow: hidden;
+    border: 1px solid var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    min-width: 60px;
+    transition: all 100ms ease;
+}
+
+.block:hover {
+    background-color: var(--medium-blue);
+}
+
+.arrow-text {
+    font-size: 30px;
+}
+
+.block-text {
+    font-size: 10px;
+}
+
+.block i {
+    font-size: 30px;
+}
+
+.activeToggle {
+    border: 1px solid var(--red);
+    transform: scale(1.1);
+}
+
 /* < ======== Contact Me Section ======== > */
 .details-hr {
     width: 60%;
@@ -712,6 +734,7 @@ footer {
 }
 
 .heading {
+    text-align: left;
     margin-bottom: 20px;
     color: var(--red);
     font-size: 20px;
@@ -719,6 +742,8 @@ footer {
 }
 
 .links {
+    text-align: left;
+    line-height: 20px;
     font-size: 12px;
 }
 
@@ -802,6 +827,10 @@ footer {
 }
 
 @media (max-width: 1000px) { 
+    nav {
+        justify-content: right;
+    }
+
     .nav-lines {
         display: block;
         cursor: pointer;
@@ -812,7 +841,7 @@ footer {
         margin: 0 0;
         display: flex;
         flex-direction: column;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
         width: 100%;
@@ -868,11 +897,6 @@ footer {
         margin: 10px;
     }
 
-    .td {
-        width: 70%;
-        font-size: 10px;
-    }
-
     .stack-title {
         width: 70%;
         font-size: 10px;
@@ -880,6 +904,12 @@ footer {
     
     .absolute-text {
         font-size: 20vw;
+    }
+
+    .display-box, .select-block {
+        width: 80%;
+        position: relative;
+        z-index: 2;
     }
 
     form {
@@ -936,6 +966,22 @@ footer {
         font-size: 30vw;
     }
 
+    .block {
+        --size: 50px;
+        min-width: var(--size);
+        height: var(--size);
+    }
+
+    .block-text {
+        font-size: 8px;
+        margin-top: 4px;
+    }
+
+    .block i {
+        font-size: 24px;
+        margin-top: 4px;
+    }
+
     .experience {
         width: 100%;
     }
@@ -950,6 +996,21 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .box {
+        width: 95vw;
+        left: 2.5vw;
+    }
+
+    .left-border {
+        left: 2.5vw;
+        border: 6px solid var(--red);
+    }
+
+    .right-border {
+        right: 2.5vw;
+        border: 6px solid var(--red);
+    }
+
     .logo label {
         font-size: 16px;
     }
@@ -1040,6 +1101,10 @@ footer {
         width: 95%;
         font-size: 10px;
     }
+
+    .display-box, .select-block {
+        width: 95%;
+    }
     
     .absolute-text {
         display: none;
@@ -1112,12 +1177,12 @@ footer {
         margin-top: 10px;
     }
 
-    .td {
-        padding: 5px;
-    }
-
     .stack-title {
         font-size: 6px;
+    }
+
+    .left-border, .right-border {
+        display: none;
     }
 
     .details-hr {
@@ -1160,7 +1225,8 @@ footer {
 /* Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 0px;
-    background-color: var(--black);
+    height: 5px;
+    /* background-color: var(--light-blue); */
 }
 
 /* font-family: 'Tungsten'; */
