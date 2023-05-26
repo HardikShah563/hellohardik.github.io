@@ -1,0 +1,256 @@
+
+/* < ======== NEW ABOUT ME SECTION ======== > */
+.about-title-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto auto;
+}
+
+.about-title-flex .subtitle {
+    margin: 0;
+}
+
+.about-title-flex .title {
+    width: 300px;
+    display: block;
+}
+
+.about-title-flex .paragraph {
+    min-width: 200px;
+    width: 40vw;
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.about-title {
+    text-align: left;
+}
+
+.about-sub-title {
+    width: 90%;
+    margin: auto auto;
+}
+
+.about-contents {
+    width: 90%;
+    margin: 20px auto 0px auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0.9px solid var(--red);
+}
+
+.about-heading {
+    writing-mode: vertical-rl;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-family: 'Tungsten';
+    text-align: center;
+    padding: 70px 10px;
+    height: 40vh;
+}
+
+.about-heading-border {
+    border-right: 0.9px solid var(--red);
+}
+
+.about-logos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-logo-square {
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+
+.border img {
+    width: 8px;
+}
+
+.border-horizontal img {
+    width: 70%;
+    margin: auto auto;
+    display: none;
+    margin-block: 10px;
+}
+
+
+.clg-logo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--grey);
+    margin: 20px 40px;
+}
+
+.about-names {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+}
+
+.names {
+    padding: 20px 20px 10px 30px;
+    width: 400px;
+}
+
+.from {
+    font-size: 10px;
+}
+
+.fun-about-degree {
+    writing-mode: vertical-rl;
+    position: relative;
+    right: 5px;
+    font-size: 12px;
+    color: var(--red);
+    text-shadow: 0px 0px 10px var(--red);
+}
+
+@media (max-width: 1000px) {
+    .about-title-flex {
+        flex-wrap: wrap;
+    }
+
+    .about-title-flex .paragraph {
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .border img {
+        width: 7px;
+    }
+
+    .about-contents {
+        width: 100%;
+    }
+
+    .education {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .names {
+        padding: 10px 10px 10px 30px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-heading {
+        font-size: 32px;
+        padding: 30px 5px;
+    }
+    
+    .names {
+        padding: 20px 0px 10px 20px;
+        width: 270px;
+    }
+
+    .about-title-flex .paragraph {
+        text-align: left;
+    }
+
+    .clg-degree, .clg-name, .clg-year {
+        font-size: 13px;
+    }
+
+    .clg-logo {
+        width: 90px;
+        height: 90px;
+        margin: 20px;
+    }
+
+    .about-logo-square {
+        left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-heading {
+        writing-mode: horizontal-tb;
+        width: 100%;
+        padding: 5px;
+        height: auto;
+    }
+
+    .border img {
+        display: none;
+    }
+
+    .border-horizontal img {
+        display: block;
+    }
+
+    .about-title-flex .paragraph {
+        font-size: 10px;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    .about-logos {
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .clg-logo {
+        margin: 10px;
+    }
+    
+    .about-names {
+        width: 80%;
+        margin: auto auto;
+    }
+
+    .about-logo-square {
+        top: 15px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-title-flex .title {
+        font-size: 20vw;
+    }
+
+    .about-title-flex .subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .clg-logo {
+        margin: 10px 0;
+    }
+    
+    .about-names {
+        width: 95%;
+    }
+
+    .fun-about-degree {
+        writing-mode: horizontal-tb;
+        margin-block: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-logo-square {
+        top: 15px;
+        left: 0px;
+    }
+}

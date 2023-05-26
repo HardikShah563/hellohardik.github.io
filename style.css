@@ -131,6 +131,10 @@ li:hover>.cursor {
     color: var(--red);
 }
 
+.red-bg {
+    background-color: var(--red);
+}
+
 /* ============new nav bar =============== */
 nav {
     display: flex;
@@ -292,17 +296,16 @@ main {
     text-shadow: 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1), 0px 0px var(--size) var(--color1);
 }
 
-
-
 /* <======== Common For all sections ========> */
 .title {
     text-align: center;
-    position: relative;
+    letter-spacing: 2px;
     font-size: 6vw;
     font-family: 'Tungsten';
     color: var(--off-white);
-    /* background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue)); */
-    z-index: 2;
+    /* background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .subtitle {
@@ -321,6 +324,7 @@ main {
     text-align: center;
     position: relative;
     letter-spacing: 2px;
+    font-size: 14px;
     width: 60vw;
     margin: auto auto;
     color: var(--off-white);
@@ -340,6 +344,11 @@ main {
     height: 30px;
 }
 
+.wid90-mar-auto {
+    width: 90%;
+    margin: auto auto;
+}
+
 /* <======== About Me Section ========> */
 
 .about-me {
@@ -350,10 +359,10 @@ main {
     top: -100px;
 }
 
-.about-content {
-    width: 60%;
+/* .about-content {
+    width: 80%;
     margin: 70px auto;
-}
+} */
 
 .education-title {
     display: block;
@@ -370,92 +379,6 @@ main {
     justify-content: center;
     position: relative;
     z-index: 2;
-}
-
-.education {
-    padding: 20px;
-    margin: 20px;
-    background-color: var(--red);
-    border: 1px solid var(--off-white);
-    box-shadow: 0px 0px 10px var(--medium-blue);
-    transition-duration: 200ms;
-}
-
-.education:hover {
-    transform: scale(1.05);
-    background-color: var(--deep-blue);
-    border: 1px solid var(--red);
-    box-shadow: 0px 0px 10px var(--matt-black);
-}
-
-.education p {
-    text-align: center;
-}
-
-.education p:nth-child(1) {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.education p:nth-child(2) {
-    font-size: 10px;
-}
-
-.education p:nth-child(3) {
-    color: var(--white);
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.hover-effect1 {
-    transition-duration: 200ms;
-}
-
-.hover-effect1:hover > .red-line-bottom {
-    background-color: var(--red);
-}
-
-
-.red-line-bottom {
-    position: relative;
-    width: 40%;
-    height: 5px;
-    background-color: var(--white);
-    bottom: -25px;
-    left: -21px;
-    /* border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px; */
-}
-
-.hobby {
-    padding: 20px;
-    margin: 20px;
-    width: 140px;
-    background-color: var(--red);
-    border: 1px solid var(--grey);
-    border-radius: 4px;
-    transition-duration: 200ms;
-    box-shadow: 0px 0px 10px var(--medium-blue);
-}
-
-.hobby:hover {
-    transform: scale(1.05);
-    background-color: var(--deep-blue);
-    border: 1px solid var(--red);
-    box-shadow: 0px 0px 10px var(--matt-black);
-}
-
-.hobby p {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.hobby i {
-    display: flex;
-    justify-content: center;
-    font-size: 36px;
-    margin: 10px;
 }
 
 .relative-text {
@@ -475,19 +398,6 @@ main {
 }
 
 /* < ======== My Stack Section ======== > */
-.stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60vw;
-    margin: auto auto;
-
-}
-
-.my-stack-table {
-    margin: auto auto;
-}
-
 .absolute-text {
     font-family: 'Valorant';
     position: absolute;
@@ -818,9 +728,9 @@ footer {
     border: 0.5px solid var(--grey);
 }
 
-@media (max-width: 1400px) {
-    .nav-links {
-        margin-right: 50px;
+@media (max-width: 1300px) {
+    .title {
+        font-size: 8vw;
     }
 
     .name {
@@ -880,17 +790,8 @@ footer {
     }
 
     .title {
-        font-size: 8vw;
+        font-size: 9.5vw;
         letter-spacing: 2px;
-    }
-
-    .about-content {
-        width: 80%;
-    }
-
-    .education {
-        width: 100%;
-        font-size: 10px;
     }
 
     .stack i {
@@ -950,18 +851,6 @@ footer {
     
     .absolute-text {
         display: 20vw;
-    }
-
-    .hobby {
-        width: 100px;
-    }
-
-    .hobby p {
-        font-size: 10px;
-    }
-
-    .hobby i {
-        font-size: 24px;
     }
 
     .relative-text {
@@ -1056,10 +945,6 @@ footer {
         width: 80%;
     }
 
-    .about-content {
-        width: 95%;
-    }
-
     .education {
         padding: 10px;
         margin: 10px;
@@ -1070,14 +955,6 @@ footer {
         left: -11px;
     }
 
-    .education p:nth-child(1) {
-        font-size: 12px;
-    }
-
-    .education p:nth-child(3) {
-        font-size: 10px;
-    }
-
     .education-title {
         width: 80%;
         margin: auto auto;
@@ -1086,6 +963,14 @@ footer {
 
     .relative-text {
         display: none;
+    }
+
+    .about-logos {
+        width: 40%;
+    }
+
+    .clg-logo {
+        margin: 10px 10px;
     }
 
     .stack i {
@@ -1158,6 +1043,14 @@ footer {
         border-bottom: 5px solid var(--red);
         border-left: none;
         border-right: none;
+    }
+
+    .title {
+        font-size: 16vw;
+    }
+
+    .subtitle {
+        text-align: center;
     }
 
     .name {
