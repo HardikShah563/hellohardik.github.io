@@ -1,0 +1,61 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-name {
+    font-family: 'Tungsten';
+    font-size: 70px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 8px;
+}
+
+.project a {
+    display: block;
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid var(--white);
+}
+
+.project a img {
+    width: 100%;
+    margin: auto auto;
+    transition: all 200ms ease;
+    user-select: none;
+}
+
+.project a img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1000px) {
+    .project-name {
+        font-size: 60px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .project-name {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .project a img {        
+        width: 400px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-name {
+        top: 0px;
+    }
+
+    .project a img {
+        width: 90vw;
+        margin: auto auto;
+    }
+}

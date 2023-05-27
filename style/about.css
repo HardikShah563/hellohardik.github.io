@@ -1,4 +1,3 @@
-
 /* < ======== NEW ABOUT ME SECTION ======== > */
 .about-title-flex {
     display: flex;
@@ -40,6 +39,7 @@
 
 .about-content {
     display: flex;
+    justify-content: left;
     align-items: center;
     width: 100%;
     border: 0.9px solid var(--red);
@@ -51,7 +51,7 @@
     font-size: 40px;
     font-family: 'Tungsten';
     text-align: center;
-    padding: 70px 10px;
+    padding: 10px;
     height: 40vh;
 }
 
@@ -78,6 +78,10 @@
     width: 8px;
 }
 
+.border2 img {
+    width: 9px;
+}
+
 .border-horizontal img {
     width: 70%;
     margin: auto auto;
@@ -85,6 +89,12 @@
     margin-block: 10px;
 }
 
+.border2-horizontal img {
+    width: 70%;
+    margin: auto auto;
+    display: none;
+    margin-block: 10px;
+}
 
 .clg-logo {
     width: 100px;
@@ -93,17 +103,39 @@
     margin: 20px 40px;
 }
 
-.about-names {
+.about-names,
+.hobby-names {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
     align-items: center;
-    width: fit-content;
 }
 
 .names {
-    padding: 20px 20px 10px 30px;
+    padding: 10px 10px 10px 30px;
     width: 400px;
+}
+
+.hobby-names {
+    gap: 20px;
+    margin: auto auto;
+}
+
+.hobby-img img {
+    width: 300px;
+    user-select: none;
+    position: relative;
+    top: -20px;
+}
+
+.hobby-name {
+    font-family: 'Tungsten';
+    letter-spacing: 2px;
+    font-size: 50px;
+    position: relative;
+    bottom: -5px;
+    left: 5px;
+    z-index: 3;
+    text-shadow: 0px 0px 10px var(--black);
 }
 
 .from {
@@ -113,10 +145,35 @@
 .fun-about-degree {
     writing-mode: vertical-rl;
     position: relative;
-    right: 5px;
+    right: 0px;
     font-size: 12px;
     color: var(--red);
     text-shadow: 0px 0px 10px var(--red);
+}
+
+.edu-lines {
+    display: flex;
+    gap: 5px;
+    margin-block: 15px;
+}
+
+.edu-line1 {
+    width: 100px;
+    height: 5px;
+    background-color: var(--red);
+}
+
+.edu-line2 {
+    width: 5px;
+    height: 5px;
+    background-color: var(--red);
+}
+
+@media (max-width: 1100px) {
+    .hobby-img img {
+        width: 250px;
+        user-select: none;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -128,9 +185,13 @@
         font-size: 13px;
         width: 100%;
     }
-    
+
     .border img {
         width: 7px;
+    }
+
+    .border2 img {
+        width: 8px;
     }
 
     .about-contents {
@@ -146,6 +207,23 @@
         padding: 10px 10px 10px 30px;
         width: 350px;
     }
+
+    .hobby-img img {
+        width: 250px;
+    }
+
+    .fun-about-degree {
+        writing-mode: horizontal-tb;
+        margin: 5px 5px 5px 25px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .hobby-img img {
+        width: 200px;
+        user-select: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -153,7 +231,11 @@
         font-size: 32px;
         padding: 30px 5px;
     }
-    
+
+    .about-heading-border {
+        height: 75%;
+    }
+
     .names {
         padding: 20px 0px 10px 20px;
         width: 270px;
@@ -163,7 +245,9 @@
         text-align: left;
     }
 
-    .clg-degree, .clg-name, .clg-year {
+    .clg-degree,
+    .clg-name,
+    .clg-year {
         font-size: 13px;
     }
 
@@ -175,6 +259,29 @@
 
     .about-logo-square {
         left: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .hobby-names {
+        justify-content: center;
+    }
+
+    .border-horizontal2 img {
+        width: 40px;
+        display: block;
+    }
+
+    .hobby-img img {
+        width: 300px;
+    }
+
+    .border2 img {
+        display: none;
+    }
+
+    .border2-horizontal img {
+        display: block;
     }
 }
 
@@ -198,6 +305,10 @@
         font-size: 10px;
     }
 
+    .about-heading-border {
+        border-bottom: 0.9px solid var(--red);
+    }
+
     .about-content {
         flex-wrap: wrap;
     }
@@ -212,7 +323,7 @@
     .clg-logo {
         margin: 10px;
     }
-    
+
     .about-names {
         width: 80%;
         margin: auto auto;
@@ -237,20 +348,31 @@
     .clg-logo {
         margin: 10px 0;
     }
-    
+
     .about-names {
         width: 95%;
     }
 
-    .fun-about-degree {
-        writing-mode: horizontal-tb;
-        margin-block: 5px;
+    .hobby-names {
+        gap: 0px;
+        justify-content: left;
+    }
+
+    .hobby {
         width: 100%;
-        text-align: center;
+    }
+
+    .hobby-img img {
+        width: 100%;
     }
 
     .about-logo-square {
         top: 15px;
         left: 0px;
+    }
+
+    .fun-about-degree {
+        font-size: 10px;
+        margin: 0px 0px 0px 20px;
     }
 }
