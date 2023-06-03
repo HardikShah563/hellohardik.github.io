@@ -1,0 +1,134 @@
+:root {
+    --parent-size: 60px;
+    --size: 40px;
+}
+
+.dock-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.dock {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--red);
+    border-radius: 12px;
+    /* background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%); */
+    background-image: linear-gradient(50deg, var(--dark-blue) 0%, var(--medium-blue) 50%, var(--dark-blue) 75%);
+    position: absolute;
+    bottom: 15px;
+    padding: 4px;
+    z-index: 3;
+}
+
+.dock-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    transition: all 150ms ease;
+}
+
+.dock-item a {
+    width: var(--size);
+    height: var(--size);
+    /* border: 1px solid var(--white); */
+    /* background-color: var(--deep-blue); */
+}
+
+.dock-item a img {
+    border-radius: 10px;
+}
+
+.dock-item:hover {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    transform: scale(1.6);
+}
+
+.dock-item:hover + .dock-item, 
+.dock-item:has(+ .dock-item:hover) {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    transform: scale(1.1);
+}
+
+.dock-item:hover + .dock-item + .dock-item, 
+.dock-item:has(+ .dock-item + .dock-item:hover) {
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    /* transform: scale(1.2); */
+}
+
+.dock-item a img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .dock {
+        padding: 5px;
+    }
+
+    .dock-item {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .dock-item a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        --size-dock: 32px;
+    }
+
+    .dock {
+        padding: 2px;
+    }
+
+    .dock-item {
+        width: var(--size-dock);
+        height: var(--size-dock);
+        font-size: 16px;
+    }
+
+    .dock-item a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .dock-item a img {
+        border-radius: 6px;
+    }
+
+    /* Setting hover effects to none */
+
+    .dock-item:hover {
+        width: var(--size-dock);
+        height: var(--size-dock);
+        margin-top: -10px;
+    }
+    
+    .dock-item:hover + .dock-item, .dock-item:has(+ .dock-item:hover) {
+        width: var(--size-dock);
+        height: var(--size-dock);
+        margin-top: -0px;
+    }
+    
+    .dock-item:hover + .dock-item + .dock-item, .dock-item:has(+ .dock-item + .dock-item:hover) {
+        width: var(--size-dock);
+        height: var(--size-dock);
+        margin-top: -0px;
+    }
+}

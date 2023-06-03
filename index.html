@@ -13,8 +13,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/projects.css" />
+    <link rel="stylesheet" href="./style/dock.css" />
+    <link rel="stylesheet" href="./style/settings.css" />
     <!-- Script -->
     <script src="./index.js" defer></script>
+    <script src="./script/dock.js" defer></script>
+    <script src="./script/settings.js" defer></script>
     <!-- Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/6d232ec003.js" crossorigin="anonymous"></script>
 </head>
@@ -32,8 +36,9 @@
         <div class="box">
             <div class="left-border"></div>
             <div class="right-border"></div>
+            <div id="home"></div>
             <!-- header section in which navbar lies -->
-            <nav id="home">
+            <!-- <nav id="home">
                 <div class="nav-links">
                     <li><a href="#about-section">ABOUT
                             <hr>
@@ -59,7 +64,7 @@
                     <div class="line line-half"></div>
                     <div class="line line-full"></div>
                 </div>
-            </nav>
+            </nav> -->
             <!-- https://www.google.com/search?q=move+text+horizontally+on+scroll&rlz=1C1UEAD_enIN977IN977&ei=QYMkY9vzM5jez7sPoae8yAE&oq=scroll+on+horizon+text&gs_lcp=Cgdnd3Mtd2l6EAMYADIICAAQHhAIEAcyBQgAEIYDMgUIABCGAzIFCAAQhgM6BAgAEEdKBAhBGABKBQhAEgExSgQIRhgAUPIEWKMNYNUTaABwA3gAgAGKAYgBxgaSAQMwLjeYAQCgAQHIAQjAAQE&sclient=gws-wiz#kpvalbx=_UIMkY-zaLt2V3LUPuMem0AU_34 -->
             <main>
                 <div class="name">
@@ -293,7 +298,7 @@
 
             <hr class="section-divider">
 
-            <section class="achievements-section section" id="achievements-section">
+            <section class="achievements-section section" id="projects-section">
                 <h1 class="title">PROJECTS & CONTRIBUTIONS</h1>
                 <h4 class="subtitle">ALWAYS LOOKS GOOD ON THE RESUME</h4>
                 <!-- <p class="paragraph">-- Nothing yet --</p> -->
@@ -405,16 +410,71 @@
             </footer>
         </div>
     </section>
-    <div class="arrow">
-        <a href="#home">
-            <img src="./res/arrow.png" alt="arrow">
-            <div class="tothetop hide">
-                Go to the top
-            </div>
-        </a>
-    </div>
-    <div class="arrow">
 
+    <div class="dock-parent">
+        <div class="dock">
+            <!-- onmousemove="myFunction()" -->
+            <div class="dock-item" onmousemove="dockHover()" id="1hover">
+                <a href="#home">
+                    <img src="./res/hellohardik.png" alt="finder icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#about-me">
+                    <!-- <i class="fa-solid fa-graduation-cap"></i> -->
+                    <img src="./res/books.png" alt="books icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#my-stack">
+                    <!-- <i class="fa-solid fa-gear"></i> -->
+                    <img src="./res/skills.png" alt="skills icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#blogs-section">
+                    <!-- <i class="fa-solid fa-feather"></i> -->
+                    <img src="./res/blogspot.png" alt="blogspot icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#experience-section">
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                    <img src="./res/exp.png" alt="experience icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#projects-section">
+                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                    <img src="./res/appstore.png" alt="apstore icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#achievements-section">
+                    <!-- <i class="fa-solid fa-medal"></i> -->
+                    <img src="./res/achieve.png" alt="achieve icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#contact-me-section">
+                    <!-- <i class="fa-regular fa-address-book"></i> -->
+                    <img src="./res/contact.png" alt="contact icon">
+                </a>
+            </div>
+            <div class="dock-item" onmousemove="dockHover()">
+                <a href="#contact-me-section">
+                    <img src="./res/settings.png" alt="settings icon">
+                </a>
+            </div>
+            <!-- https://www.youtube.com/watch?v=_ZcIFTvLm64 -->
+        </div>
+
+        <div class="settings-modal">
+            <div class="cross-div">
+                <i class="fa-solid fa-close settings-close"></i>
+            </div>
+            <p class="heading">Settings</p>
+        </div>
     </div>
 </body>
 

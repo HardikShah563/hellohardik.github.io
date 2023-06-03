@@ -1,0 +1,38 @@
+.settings-modal {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--deep-blue);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.settings-modal .heading {
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+}
+
+.cross-div {
+    display: flex;
+    justify-content: right;
+    padding: 10px 10px 0 0;
+}
+
+.settings-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    border-radius: 100%;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.settings-visible {
+    display: block;
+}

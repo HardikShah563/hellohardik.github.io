@@ -11,11 +11,11 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // Navbar CSS
-var navLines = document.querySelector(".nav-lines");
-navLines.addEventListener("click", () => {
-    var navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("active");
-})
+// var navLines = document.querySelector(".nav-lines");
+// navLines.addEventListener("click", () => {
+//     var navLinks = document.querySelector(".nav-links");
+//     navLinks.classList.toggle("active");
+// });
 
 // // Horizontal Text Scroll Effect
 // let line1 = document.querySelector(".line-1");

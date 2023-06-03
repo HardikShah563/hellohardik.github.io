@@ -25,6 +25,8 @@
 
 .about-title {
     text-align: left;
+    position: relative;
+    z-index: inherit;
 }
 
 .about-sub-title {
@@ -336,6 +338,10 @@
 }
 
 @media (max-width: 400px) {
+    #about-section{
+        margin-top: 50px;
+    }
+
     .about-title-flex .title {
         font-size: 20vw;
     }

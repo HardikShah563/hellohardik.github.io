@@ -92,10 +92,10 @@ li:hover>.cursor {
 .box {
     background-color: var(--deep-blue-transparent);
     position: absolute;
-    top: 7vh;
+    top: 2vh;
     left: 7vw;
     width: 86vw;
-    height: 86vh;
+    height: 85vh;
     border-left: 8px solid var(--red);
     border: 6px solid var(--red);
     /* border-radius: 20px; */
@@ -133,83 +133,6 @@ li:hover>.cursor {
 
 .red-bg {
     background-color: var(--red);
-}
-
-/* ============new nav bar =============== */
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: var(--matt-black);
-    border-radius: 20px;
-}
-
-/* ---- navigation bar logo ---- */
-.logo label {
-    color: var(--golden);
-}
-
-.logo label {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--red);
-}
-
-/* ---- navigation bar links ---- */
-.nav-links {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    width: 60%;
-    height: 20px;
-    margin: 0 20px;
-}
-
-.nav-links li {
-    display: block;
-    margin: auto 10px;
-}
-
-.nav-links li a{
-    color: var(--white);
-    font-weight: 500;
-    font-size: 18px;
-    transition: 300ms;
-}
-
-a hr {
-    width: 0%;
-    border: none;
-    transition: 300ms ease-in-out;
-}
-
-.nav-links li a:hover > hr {
-    width: 60%;
-    border: 1px solid var(--red);
-}
-
-.contact i {
-    transition: 300ms;
-}
-
-/* navigation bar lines for collapsable nav bar */
-.nav-lines {
-    display: none;
-    margin: auto 0;
-}
-
-.line-full {
-    background-color: var(--white);
-    width: 20px;
-    height: 2px;
-    margin: 5px;
-}
-
-.line-half {
-    background-color: var(--white);
-    width: 10px;
-    height: 2px;
-    margin: 5px;
 }
 
 main {
@@ -386,11 +309,8 @@ main {
     font-size: 25vw;
     text-align: center;
     position: relative;
-    z-index: 1;
-    top: 100px;
-    /* left: -10px; */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 200px;
+    z-index: 0  ;
     color: var(--deep-blue);
     --size: 1px;
     --color1: #404040;
@@ -855,6 +775,8 @@ footer {
 
     .relative-text {
         font-size: 30vw;
+        top: 200px;
+        left: -100px;
     }
 
     .block {
@@ -908,7 +830,7 @@ footer {
 
 
     main {
-        height: 90%;
+        /* height: 90%; */
     }
 
     .cool-text-1 p {
@@ -962,7 +884,8 @@ footer {
     }
 
     .relative-text {
-        display: none;
+        top: 100px;
+        left: -20px;
     }
 
     .about-logos {
@@ -1036,9 +959,9 @@ footer {
 @media (max-width: 400px) {
     .box {
         left: 2vw;
-        top: 5vh;
+        top: 2vh;
         width: 96%;
-        height: 90%;
+        height: 86vh;
         border-top: 5px solid var(--red);
         border-bottom: 5px solid var(--red);
         border-left: none;
@@ -1088,33 +1011,6 @@ footer {
         width: 95%;
         margin: 50px auto;
     }
-}
-
-.arrow img {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
-
-.arrow a img {
-    width: 50px;
-    rotate: 180deg;
-    -webkit-filter: drop-shadow(0px 0px 1px var(--off-white));
-    filter: drop-shadow(0px 0px 1px var(--off-white));
-    transition: all 200ms ease;
-}
-
-.arrow a img:hover {
-    -webkit-filter: drop-shadow(0px 0px 3px var(--off-white));
-    filter: drop-shadow(0px 0px 3px var(--off-white));
-}
-
-.arrow .tothetop {
-    font-size: 10px;
-    color: var(--grey);
-    position: absolute;
-    right: 12px;
-    bottom: 5px;
 }
 
 /* Scroll Bar CSS */
