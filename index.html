@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Hardik</title>
-    <!-- Style sheet -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./footer-test.css" />
+    <!-- Stars CSS -->
     <link rel="stylesheet" href="./parallax/parallax.css" />
     <!-- Styles -->
+    <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/blogs.css" />
     <link rel="stylesheet" href="./style/projects.css" />
     <link rel="stylesheet" href="./style/dock.css" />
     <link rel="stylesheet" href="./style/settings.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+
     <!-- Script -->
-    <script src="./index.js" defer></script>
+    <script src="./script/index.js" defer></script>
     <script src="./script/dock.js" defer></script>
     <script src="./script/settings.js" defer></script>
     <!-- Fontawesome Icons -->
@@ -85,7 +87,7 @@
                 </div>
             </main>
 
-            <!-- <hr class="section-divider"> -->
+            <!-- -------------------------------------- -->
 
             <div class="relative-text" id="about-section">ABOUT</div>
             <section class="about-me section" id="about-me">
@@ -95,12 +97,13 @@
                         <h4 class="subtitle about-title wid90-mar-auto">I'M NOT A GAMER</h4>
                     </div>
                     <div>
-                        <p class="paragraph about-title wid90-mar-auto">I'm a passionate front end developer with an experience of building commercial
+                        <p class="paragraph about-title wid90-mar-auto">I'm a passionate front end developer with an
+                            experience of building commercial
                             projects. The thoughts of running an empire aspires me to do what I do.
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="about-contents">
                     <div class="about-content">
                         <div class="about-heading red-bg">
@@ -123,14 +126,14 @@
                             <img src="./res/about-border-horizontal.png" alt="about-border">
                         </div>
                         <div class="about-names">
-                            
+
                             <div class="names">
                                 <div class="edu-lines">
                                     <div class="edu-line1"></div>
                                     <div class="edu-line2"></div>
                                     <div class="edu-line2"></div>
                                 </div>
-                                
+
                                 <div class="clg-degree">
                                     BTech in Electronics Engineering
                                 </div>
@@ -170,9 +173,9 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="about-content">
                         <div class="about-heading about-heading-border">
                             HOBBIES
@@ -205,7 +208,7 @@
 
             <!-- <hr class="section-divider"> -->
             <div class="slash-section-divider">
-                <img id="divider-img" src="./res/divider-paralellogram.svg" alt="">
+                <img id="divider-img" src="./res/divider-paralellogram.png" alt="">
             </div>
 
             <section class="my-stack section" id="my-stack">
@@ -225,10 +228,51 @@
                         <!-- Printing using for loop -->
                     </div>
                 </div>
-                <p class="paragraph">I can <b class="red">C</b>reate, <b class="red">R</b>ead, <b class="red">U</b>pdate, <b class="red">D</b>elete. But not <b class="red">Study</b> :)</p>
+                <p class="paragraph">I can <b class="red">C</b>reate, <b class="red">R</b>ead, <b
+                        class="red">U</b>pdate, <b class="red">D</b>elete. But not <b class="red">Study</b> :)</p>
             </section>
 
-            <!-- <hr class="section-divider"> -->
+            <div class="img-divider">
+                <img src="./res/about-border-horizontal.png" alt="">
+            </div>
+
+            <section class="blogs-section" id="blogs-section">
+                <div class="blogs-heading-section">
+                    <div class="blogs-text">
+                        <p class="blogs-small-heading">ITS<br></p>
+                        <p class="blogs-big-heading">ROCKET SCIENCE</p>
+                    </div>
+                    <div class="blogs-img">
+                        <a href="https://hey-its-hardik.blogspot.com/">
+                            <img src="./res/blog.png" alt="blog picture">
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-blogs">
+                    <p class="featured-blog-heading">
+                        FEATURED BLOGS
+                    </p>
+                    <div class="blogs-div">
+                        <div class="blog-item">
+                            <a target="_blank" href="https://hey-its-hardik.blogspot.com/2022/02/lift-off-complexities-of-rocket-launch.html">
+                                <img src="./res/blog1.png" alt="blog1">
+                            </a>
+                        </div>
+
+                        <div class="blog-item">
+                            <a target="_blank" href="https://hey-its-hardik.blogspot.com/2022/01/space-suits.html">
+                                <img src="./res/blog2.png" alt="blog2">
+                            </a>
+                        </div>
+
+                        <div class="blog-item">
+                            <a target="_blank" href="https://hey-its-hardik.blogspot.com/2021/09/RocketEngines.html">
+                                <img src="./res/blog3.png" alt="blog3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section class="experience-section section" id="experience-section">
                 <div class="experience">
@@ -245,7 +289,11 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
                         <div class="below-button">
                             <div class="container below-button">
-                                <a href="./pages/experiences.html" class="primary-button">View all Experiences!</a>
+                                <a target="_blank"
+                                    href="https://drive.google.com/file/d/11JRdBDnGpwo-jr6sUsDc98MLT9Ln5Ly_/view?usp=sharing"
+                                    class="primary-button">
+                                    View my RESUME!
+                                </a>
                             </div>
                             <div class="below-lines">
                                 <div class="below-line1"></div>
@@ -298,7 +346,7 @@
 
             <hr class="section-divider">
 
-            <section class="achievements-section section" id="projects-section">
+            <section class="projects-section section" id="projects-section">
                 <h1 class="title">PROJECTS & CONTRIBUTIONS</h1>
                 <h4 class="subtitle">ALWAYS LOOKS GOOD ON THE RESUME</h4>
                 <!-- <p class="paragraph">-- Nothing yet --</p> -->
@@ -324,7 +372,7 @@
             </section>
 
 
-            <hr class="section-divider">
+            <!-- <hr class="section-divider">
 
             <section class="achievements-section section" id="achievements-section">
                 <h1 class="title">ACHIEVEMENTS</h1>
@@ -332,7 +380,7 @@
                 <p class="paragraph">-- Nothing yet --</p>
             </section>
 
-            <hr class="section-divider">
+            <hr class="section-divider"> -->
 
             <section class="contact-section section" id="contact-me-section">
                 <h1 class="title">CONTACT ME</h1>
@@ -341,19 +389,19 @@
                     <p class="details">DETAILS</p>
                     <hr>
                 </div>
-                <form action="" class="contact-form" id="contact-form">
+                <form action="https://formsubmit.co/hellohardik563@gmail.com" method="post" class="contact-form" id="contact-form">
                     <p>NAME</p>
-                    <input type="text">
-                    <p>SUBJECT</p>
-                    <input type="text">
-                    <p>DESCRIPTION</p>
-                    <textarea name="description" id="description" cols="20" rows="8"></textarea>
-                    <button disabled="disabled">SORRY! This form doesn't work. Though you can EMAIL ME!</button><br>
-                    <div class="container">
-                        <a href="mailto:hardikts@gmail.com" class="primary-button">EMAIL ME!</a>
-                    </div>
+                    <input type="text" name="name" id="name" autocomplete="off">
+                    <p>YOUR EMAIL</p>
+                    <input type="text" id="email-email" autocomplete="off" required>
+                    <p>LEAVE A MESSAGE</p>
+                    <textarea name="description" id="description" cols="20" rows="8" autocomplete="off"
+                        required></textarea>
+                    <button type="submit" class="primary-button">
+                        <div class="contact-button">SUBMIT</div>
+                    </button>
                 </form>
-            </section>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
 
             <footer class="footer">
                 <div class="footer-section personal">
@@ -431,49 +479,55 @@
                     <img src="./res/skills.png" alt="skills icon">
                 </a>
             </div>
+
             <div class="dock-item" onmousemove="dockHover()">
                 <a href="#blogs-section">
                     <!-- <i class="fa-solid fa-feather"></i> -->
                     <img src="./res/blogspot.png" alt="blogspot icon">
                 </a>
             </div>
+
             <div class="dock-item" onmousemove="dockHover()">
                 <a href="#experience-section">
                     <!-- <i class="fa-regular fa-star"></i> -->
                     <img src="./res/exp.png" alt="experience icon">
                 </a>
             </div>
+
             <div class="dock-item" onmousemove="dockHover()">
                 <a href="#projects-section">
                     <!-- <i class="fa-regular fa-lightbulb"></i> -->
                     <img src="./res/appstore.png" alt="apstore icon">
                 </a>
             </div>
-            <div class="dock-item" onmousemove="dockHover()">
+
+            <!-- <div class="dock-item" onmousemove="dockHover()">
                 <a href="#achievements-section">
-                    <!-- <i class="fa-solid fa-medal"></i> -->
                     <img src="./res/achieve.png" alt="achieve icon">
                 </a>
-            </div>
+            </div> -->
+
             <div class="dock-item" onmousemove="dockHover()">
                 <a href="#contact-me-section">
                     <!-- <i class="fa-regular fa-address-book"></i> -->
                     <img src="./res/contact.png" alt="contact icon">
                 </a>
             </div>
+
             <div class="dock-item" onmousemove="dockHover()">
-                <a href="#contact-me-section">
-                    <img src="./res/settings.png" alt="settings icon">
+                <a>
+                    <img class="settings" id="settings" src="./res/settings.png" alt="settings icon">
                 </a>
             </div>
             <!-- https://www.youtube.com/watch?v=_ZcIFTvLm64 -->
         </div>
 
-        <div class="settings-modal">
+        <div class="settings-modal" id="settings-modal">
             <div class="cross-div">
-                <i class="fa-solid fa-close settings-close"></i>
+                <i class="fa-solid fa-close settings-close" id="settings-close"></i>
             </div>
-            <p class="heading">Settings</p>
+            <p class="heading">SETTINGS</p>
+            <p class="settings-text">Some very dope settings coming up</p>
         </div>
     </div>
 </body>

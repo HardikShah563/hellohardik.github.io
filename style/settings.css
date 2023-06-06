@@ -1,18 +1,22 @@
 .settings-modal {
     display: none;
     position: absolute;
+    z-index: 100;
     top: 10vh;
     width: 40vw;
     height: 70vh;
     background-color: var(--deep-blue);
-    border: 1px solid var(--white);
+    /* border: 1px solid var(--white); */
     border-radius: 20px;
+    box-shadow: 10px 10px 100px var(--black);
 }
 
 .settings-modal .heading {
     text-align: center;
-    font-size: 32px;
+    font-size: 60px;
+    letter-spacing: 1px;
     margin: 0;
+    font-family: 'Tungsten';
 }
 
 .cross-div {
@@ -22,9 +26,7 @@
 }
 
 .settings-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 4px 0 0 4px;
     width: 20px;
     height: 20px;
     background-color: var(--red);
@@ -35,4 +37,23 @@
 
 .settings-visible {
     display: block;
+}
+
+.settings-text {
+    padding: 10px 50px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .settings-modal {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .settings-modal {
+        width: 90vw;
+    }
 }
