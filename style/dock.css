@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 15px;
     padding: 4px;
-    z-index: 3;
+    z-index: 10;
 }
 
 .dock-item {
