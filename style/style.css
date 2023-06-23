@@ -232,6 +232,7 @@ main {
     font-size: 6vw;
     font-family: 'Tungsten';
     color: var(--off-white);
+    /* text-shadow: 0px 0px 10px var (--white); */
     /* background: -webkit-linear-gradient(var(--dark-blue), var(--medium-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -366,6 +367,7 @@ main {
     font-family: 'Tungsten';
     color: var(--off-white);
     border-top: 2px solid var(--medium-blue);
+    letter-spacing: 4px;
 }
 
 .exp-subtitle {

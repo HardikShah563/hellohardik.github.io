@@ -27,31 +27,33 @@ document.addEventListener("mousemove", (e) => {
 // // }
 
 // My Stack printting divs: 
-var stackName = ['HTML',
-    'CSS',
-    'JavaScript',
+var stackName = [
     'React',
+    'Node',
     'Python',
     'Flask',
     'php',
+    'JavaScript',
     'C',
     'C++',
-    'Github',
-    'npm',
+    'HTML',
+    'CSS',
+    'Vers. Ctrl',
     'Editing'
 ];
 
-var stackClass = ['fa-brands fa-html5',
-    'fa-brands fa-css3',
-    'fa-brands fa-square-js',
+var stackClass = [
     'fa-brands fa-react',
+    'fa-brands fa-node',
     'fa-brands fa-python',
     'fa-solid fa-pepper-hot fa-flip-horizontal',
     'fa-brands fa-php',
+    'fa-brands fa-square-js',
     'fa-solid fa-c',
     'fa-solid fa-c',
-    'fa-brands fa-github',
-    'fa-brands fa-npm',
+    'fa-brands fa-html5',
+    'fa-brands fa-css3',
+    'fa-brands fa-git',
     'fa-solid fa-sliders',
 ];
 
