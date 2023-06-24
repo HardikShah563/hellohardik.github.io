@@ -96,9 +96,7 @@ li:hover>.cursor {
     left: 7vw;
     width: 86vw;
     height: 85vh;
-    border-left: 8px solid var(--red);
     border: 6px solid var(--red);
-    /* border-radius: 20px; */
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -107,7 +105,7 @@ li:hover>.cursor {
     position: fixed;
     z-index: 200;
     top: 30vh;
-    height: 300px;
+    height: 30vh;
     border: 8px solid var(--red);
 }
 
@@ -277,6 +275,16 @@ main {
 .wid90-mar-auto {
     width: 90%;
     margin: auto auto;
+}
+
+.section {
+    margin: 10% auto 10% auto;
+}
+
+.section-divider {
+    width: 60%;
+    margin: auto auto auto auto;
+    border: 0.5px solid var(--grey);
 }
 
 /* <======== About Me Section ========> */
@@ -551,6 +559,7 @@ form input, button {
 
 form button {
     width: 100%;
+    margin-top: 12px;
 }
 
 .contact-button {
@@ -582,24 +591,22 @@ footer {
     color: var(--red);
     font-size: 20px;
     font-weight: 600;
-    text-align: centre;
 }
 
 .links {
     text-align: left;
     line-height: 20px;
     font-size: 12px;
-    text-align: centre;
 }
 
 .invitation {
     width: 180px;
-    margin: auto auto;
 }
 
 .business {
-    color: var(--matt-black);
-    text-shadow: 0px 0px 1px var(--grey);
+    color: var(--golden);
+    text-shadow: 0px 0px 10px var(--golden);
+    text-align: left;
 }
 
 /* Newsletter Form */
@@ -648,17 +655,6 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-}
-
-/* < ======== Common to all sections ======== > */
-.section {
-    margin: 10% auto 10% auto;
-}
-
-.section-divider {
-    width: 60%;
-    margin: auto auto auto auto;
-    border: 0.5px solid var(--grey);
 }
 
 @media (max-width: 1300px) {
@@ -1028,22 +1024,4 @@ footer {
 ::-webkit-scrollbar {
     width: 0px;
     height: 5px;
-    /* background-color: var(--light-blue); */
 }
-
-/* font-family: 'Tungsten'; */
-
-
-/* 
-border-width: 2px;
-border-image: linear-gradient(45deg, red , yellow);
-border-image-slice: 1; 
-*/
-
-/* 
-border-image: linear-gradient(to top, var(--red), var(--medium-blue)) 1 100%;
-border-image-slice: 1; 
-*/
-
-/* display: grid;
-place-items: center; */

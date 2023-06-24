@@ -149,8 +149,8 @@
     position: relative;
     right: 0px;
     font-size: 12px;
-    color: var(--red);
-    text-shadow: 0px 0px 10px var(--red);
+    color: var(--golden);
+    text-shadow: 0px 0px 10px var(--golden);
 }
 
 .edu-lines {

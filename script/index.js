@@ -10,22 +10,6 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.top = topPosition + "px";
 });
 
-// Navbar CSS
-// var navLines = document.querySelector(".nav-lines");
-// navLines.addEventListener("click", () => {
-//     var navLinks = document.querySelector(".nav-links");
-//     navLinks.classList.toggle("active");
-// });
-
-// // Horizontal Text Scroll Effect
-// let line1 = document.querySelector(".line-1");
-// let box = document.querySelector(".box");
-// let pos = window.scrollY;
-// console.log(pos);
-// line1.style.left = `${pos}px`;
-// // box.window.scrollY = () => {
-// // }
-
 // My Stack printting divs: 
 var stackName = [
     'React',
@@ -143,17 +127,6 @@ strToBinary(stringToBePassed);
 let binary = document.getElementById("exp-binary");
 binary.textContent = '>> ' + strToBinary('EXP');
 
-// const navLinkItems = document.querySelectorAll('nav ul li');
-// navLinkItems.forEach(link => {
-//     link.addEventListener("mouseenter", () => {
-//         cursor.classList.add("large");
-//     })
-// })
-// navLinkItems.forEach(link => {
-//     link.addEventListener("mouseleave", () => {
-//         cursor.classList.remove("large");
-//     })
-// })
 
 function sendEmail() {
     const name = document.getElementById("name").value;
