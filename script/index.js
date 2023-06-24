@@ -1,3 +1,7 @@
+console.log(console.clear());
+console.log(`Do not type to mess up anything in the console! It can be too dangerous...
+Especially Try not playing aorund up with the elements on the page, you'll ruin your own experience! 
+`);
 // Varaible declaration: 
 let i = 0;
 
@@ -46,7 +50,6 @@ var subtitle = document.getElementById("empty-block");
 
 function createStack() {
     for (i = stackName.length - 1; i >= 0; i--) {
-        // console.log(stackName[i]);
         let newStack = `
         <div class="block" id = "${i}" onclick = "activeToggle(${i})">
             <i class="${stackClass[i]}"></i>
@@ -54,7 +57,6 @@ function createStack() {
         </div>`;
         subtitle.insertAdjacentHTML("afterend", newStack);
     }
-    console.log("CreateStack works");
 }
 createStack();
 
@@ -103,7 +105,6 @@ function strToBinary(str) {
         output = output.concat(bin);
         output = output + ' ';
     }
-    console.log(output);
     return output;
 }
 
